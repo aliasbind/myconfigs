@@ -26,6 +26,10 @@ for_window [class="Thunar"] floating enable
 for_window [class="Skype"] floating enable
 for_window [class="Pidgin"] floating enable
 for_window [class="Qtcreator"] floating enable
+for_window [class="Vlc"] floating enable
+for_window [class="Transmission-gtk"] floating enable
+for_window [class="Audacious"] border none
+for_window [class="Audacious"] floating enable
 
 exec --no-startup-id irssi_cbit
 exec --no-startup-id numlockx on
