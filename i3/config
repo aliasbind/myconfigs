@@ -30,6 +30,7 @@ for_window [class="Vlc"] floating enable
 for_window [class="Transmission-gtk"] floating enable
 for_window [class="Audacious"] border none
 for_window [class="Audacious"] floating enable
+for_window [class="feh"] floating enable
 
 exec --no-startup-id irssi_cbit
 exec --no-startup-id numlockx on
