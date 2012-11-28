@@ -18,6 +18,10 @@ font xft:Terminus 9
 
 assign [class="Qees_zwave_pctool"] 2
 for_window [class="Qees_zwave_pctool"] floating enable
+
+assign [class="eu-qees-bridge-Main"] 2
+for_window [class="eu-qees-bridge-Main"] floating enable
+
 for_window [class="main"] floating enable
 
 for_window [class="Wine"] floating enable
@@ -30,6 +34,7 @@ for_window [class="Vlc"] floating enable
 for_window [class="Transmission-gtk"] floating enable
 for_window [class="Audacious"] border none
 for_window [class="Audacious"] floating enable
+for_window [class="Eclipse"] floating enable
 for_window [class="feh"] floating enable
 
 exec --no-startup-id irssi_cbit
