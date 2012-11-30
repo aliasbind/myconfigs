@@ -36,6 +36,7 @@ for_window [class="Audacious"] border none
 for_window [class="Audacious"] floating enable
 for_window [class="Eclipse"] floating enable
 for_window [class="feh"] floating enable
+for_window [class="Steam"] floating enable
 
 exec --no-startup-id irssi_cbit
 exec --no-startup-id numlockx on
