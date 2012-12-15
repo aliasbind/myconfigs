@@ -40,8 +40,6 @@ for_window [class="VirtualBox"] floating enable
 
 for_window [class="Steam"] floating enable
 for_window [class="Steam"] border none
-for_window [title="Steam"] floating enable
-for_window [title="Steam"] border none
 
 exec --no-startup-id irssi_cbit
 exec --no-startup-id numlockx on
