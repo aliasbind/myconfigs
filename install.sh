@@ -22,12 +22,6 @@ echo "Xresources: Success"
 # vim
 if [ ! -d ~/.vim ]
 then
-	command -v git > /dev/null
-	if [ $? -ne 0 ]
-	then
-		sudo apt-get install git
-	fi
-
 	git clone --recursive git@github.com:aliasbind/vimconfig.git ~/.vim
 	if [ $? -ne 0 ]
 	then
