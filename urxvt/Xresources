@@ -20,9 +20,8 @@ URxvt*color15:    #EEEEEC
 URxvt*iso14755: false
 URxvt*perl-ext-common: default,matcher,clipboard
 URxvt*perl-lib: /home/andrei/.config/urxvt/
-URxvt.keysym.M-C: perl:clipboard:copy
-URxvt.keysym.M-v: perl:clipboard:paste
-URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.C-C: perl:clipboard:copy
+URxvt.keysym.C-V: perl:clipboard:paste_escaped
 URxvt.clipboard.autocopy: true
 
 URxvt*letterSpace: -2

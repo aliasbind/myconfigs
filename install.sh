@@ -14,10 +14,19 @@ mkdir -p $DUNST_CONFIG_DIR
 ln -fs $INSTALLER_PATH/dunst/dunstrc $DUNST_CONFIG_DIR/dunstrc
 echo "dunst: Success"
 
-# Xresources
-ln -fs $INSTALLER_PATH/Xresources ~/.Xresources
+# urxvt
+URXVT_CONFIG_DIR=~/.config
+ln -fs $INSTALLER_PATH/urxvt/Xresources ~/.Xresources
+ln -fs $INSTALLER_PATH/urxvt/ $URXVT_CONFIG_DIR
 xrdb ~/.Xresources
-echo "Xresources: Success"
+command -v xsel
+if [ $? -ne 0 ]
+then
+	echo "Need to install xsel"
+	sudo apt-get install -y xsel
+fi
+
+echo "urxvt: Success"
 
 # vim
 if [ ! -d ~/.vim ]
