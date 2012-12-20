@@ -17,6 +17,12 @@ URxvt*color13:    #AD7FA8
 URxvt*color14:    #34E2E2
 URxvt*color15:    #EEEEEC
 
+URxvt*iso14755: false
+URxvt*perl-ext-common: default,matcher
+URxvt*perl-lib: ~/.config/urxvt
+URxvt*keysym.Shift-Control-C: perl:clipboard:copy
+URxvt*keysym.Shift-Control-V: perl:clipboard:paste
+
 URxvt*letterSpace: -2
 URxvt*font: xft:Mono-9
 URxvt*scrollBar: false
