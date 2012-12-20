@@ -18,10 +18,12 @@ URxvt*color14:    #34E2E2
 URxvt*color15:    #EEEEEC
 
 URxvt*iso14755: false
-URxvt*perl-ext-common: default,matcher
-URxvt*perl-lib: ~/.config/urxvt
-URxvt*keysym.Shift-Control-C: perl:clipboard:copy
-URxvt*keysym.Shift-Control-V: perl:clipboard:paste
+URxvt*perl-ext-common: default,matcher,clipboard
+URxvt*perl-lib: /home/andrei/.config/urxvt/
+URxvt.keysym.M-C: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.autocopy: true
 
 URxvt*letterSpace: -2
 URxvt*font: xft:Mono-9
