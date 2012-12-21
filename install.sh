@@ -19,7 +19,7 @@ URXVT_CONFIG_DIR=~/.config
 ln -fs $INSTALLER_PATH/urxvt/Xresources ~/.Xresources
 ln -fs $INSTALLER_PATH/urxvt/ $URXVT_CONFIG_DIR
 xrdb ~/.Xresources
-command -v xsel
+command -v xsel 2>&1 > /dev/null
 if [ $? -ne 0 ]
 then
 	echo "Need to install xsel"
