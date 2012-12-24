@@ -44,3 +44,7 @@ else
 	echo "a .vim directory in $HOME. Remove that directory and rerun"
 	echo "this script to install this configuration."
 fi
+
+# zsh
+ln -fs $INSTALLER_PATH/zshrc ~/.zshrc
+git clone https://github.com/robbyrussel/oh-my-zsh.git ~/.oh-my-zsh
