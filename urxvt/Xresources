@@ -21,7 +21,7 @@ URxvt*iso14755: false
 URxvt*perl-ext-common: default,matcher,clipboard
 URxvt*perl-lib: /home/andrei/.config/urxvt/
 URxvt.keysym.C-C: perl:clipboard:copy
-URxvt.keysym.C-V: perl:clipboard:paste_escaped
+URxvt.keysym.C-V: perl:clipboard:paste
 URxvt.clipboard.autocopy: true
 
 URxvt*letterSpace: -2
