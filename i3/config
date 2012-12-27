@@ -54,6 +54,11 @@ focus_follows_mouse no
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# bind volume keys
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+bindsym XF86AudioMute exec amixer -q set Master toggle
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
