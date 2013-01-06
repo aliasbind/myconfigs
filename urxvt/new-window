@@ -9,9 +9,17 @@ my $shellpid;
 sub on_child_start {
 	my ($self, $pid) = @_;
 	$shellpid = $pid;
+
+	()
 }
 
 sub on_user_command {
-	my $dir = readlink("/proc/" . $shellpid . "/cwd");
-	system ('urxvt -cd ' . $dir . ' &');
+	my ($self, $cmd) = @_;
+
+	if ($cmd eq "new-window") {
+		my $dir = readlink("/proc/" . $shellpid . "/cwd");
+		system ('urxvt -cd ' . $dir . ' &');
+	}
+
+	()
 }
