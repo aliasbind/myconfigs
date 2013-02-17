@@ -29,3 +29,9 @@ URxvt*letterSpace: -2
 URxvt*font: xft:Mono-9
 URxvt*scrollBar: false
 URxvt*saveLines: 65535
+
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
