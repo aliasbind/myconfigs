@@ -40,13 +40,13 @@ for_window [class="VirtualBox"] floating enable
 for_window [class="Steam"] floating enable
 for_window [class="Steam"] border none
 
-exec --no-startup-id irssi_cbit
 exec --no-startup-id numlockx on
 exec --no-startup-id xfsettingsd
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-scale ~/.wallpaper.jpg
 exec --no-startup-id xset r rate 250 35
 exec --no-startup-id xmodmap ~/.xmodmap
+exec --no-startup-id xflux -l 45 -g 25
 
 focus_follows_mouse no
 
