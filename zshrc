@@ -25,13 +25,14 @@ ZSH_THEME="mortalscumbag"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-
+# msp-gcc compiler suite
 PATH=$PATH:/opt/msp430-gcc/bin
+# ruby gems
+PATH=$PATH:~/.gem/ruby/2.0.0/bin
 
 alias t='tig --all'
 alias sudo='nocorrect sudo'
