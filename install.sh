@@ -22,10 +22,10 @@ xrdb ~/.Xresources
 command -v xsel 2>&1 > /dev/null
 if [ $? -ne 0 ]
 then
-	sudo apt-get install -y xsel
+	echo "urxvt:\tInstall package containing xsel"
+else
+	echo -e "urxvt:\tSuccess"
 fi
-
-echo -e "urxvt:\tSuccess"
 
 # vim
 if [ ! -d ~/.vim ]
@@ -53,3 +53,12 @@ then
 else
 	echo -e "zsh:\tzshrc file added, but oh-my-zsh is already installed"
 fi
+
+# other
+ln -sf $INSTALLER_PATH/other/gtkrc-2.0 ~/.gtkrc-2.0
+
+mkdir -p ~/.config/gtk-3.0/
+ln -sf $INSTALLER_PATH/other/gtk3settings.ini ~/.config/gtk-3.0/settings.ini
+
+mkdir -p ~/.config/fontconfig/
+ln -sf $INSTALLER_PATH/other/fonts.conf ~/.config/fontconfig/fonts.conf
