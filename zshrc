@@ -36,3 +36,4 @@ PATH=$PATH:~/.gem/ruby/2.0.0/bin
 
 alias t='tig --all'
 alias sudo='nocorrect sudo'
+alias v='(gvim 2>&1 > /dev/null &)'

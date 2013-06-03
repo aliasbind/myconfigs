@@ -1,4 +1,4 @@
-URxvt*foreground: #FFFFFF
+URxvt*foreground: #CCCCCC
 URxvt*background: #222222
 URxvt*color0:     #2E3436
 URxvt*color1:     #CC0000
@@ -27,8 +27,9 @@ URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.clipboard.autocopy: true
 
-URxvt*letterSpace: -2
-URxvt*font: xft:Mono-9
+URxvt*font: xft:Terminus-9:antialias=false
+URxvt*boldFont: xft:Terminus-9:antialias=false
+URxvt*italicFont: xft:Terminus-9:antialias=false
 URxvt*scrollBar: false
 URxvt*saveLines: 65535
 
