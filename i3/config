@@ -25,28 +25,23 @@ for_window [class="eu-qees-bridge-Main"] floating enable
 for_window [class="main"] floating enable
 
 for_window [class="Wine"] floating enable
-for_window [class="Xfce4-notifyd"] floating enable
-for_window [class="Thunar"] floating enable
 for_window [class="Skype"] floating enable
 for_window [class="Pidgin"] floating enable
 for_window [class="Qtcreator"] floating enable
 for_window [class="Vlc"] floating enable
 for_window [class="Transmission-gtk"] floating enable
-for_window [class="Audacious"] border none
-for_window [class="Audacious"] floating enable
-for_window [class="feh"] floating enable
 for_window [class="VirtualBox"] floating enable
 
 for_window [class="Steam"] floating enable
 for_window [class="Steam"] border none
 
 exec --no-startup-id numlockx on
-exec --no-startup-id xfsettingsd
 exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-scale ~/.wallpaper.jpg
 exec --no-startup-id xset r rate 250 35
 exec --no-startup-id xmodmap ~/.xmodmap
-exec --no-startup-id xflux -l 45 -g 25
+exec --no-startup-id sleep 30 && transmission-daemon --log-error -g ~/.config/transmission
+exec --no-startup-id sleep 30 && redshift -l 44:26 -b 0.8 -t 5500:3700
 
 focus_follows_mouse no
 
@@ -153,6 +148,7 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+Tab move container to workspace back_and_forth
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -186,6 +182,9 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
+# MPD keysyms
+bindsym $mod+F1 exec ncmpcpp toggle
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
