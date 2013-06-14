@@ -65,3 +65,6 @@ ln -sf $INSTALLER_PATH/other/fonts.conf ~/.config/fontconfig/fonts.conf
 
 # dircolors
 ln -sf $INSTALLER_PATH/other/dircolors ~/.dircolors
+
+# tigrc
+ln -sf $INSTALLER_PATH/other/tigrc ~/.tigrc
