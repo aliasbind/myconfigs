@@ -1,21 +1,43 @@
-URxvt*foreground: #CCCCCC
-URxvt*background: #222222
-URxvt*color0:     #2E3436
-URxvt*color1:     #CC0000
-URxvt*color2:     #4E9A06
-URxvt*color3:     #C4A000
-URxvt*color4:     #3465A4
-URxvt*color5:     #75507B
-URxvt*color6:     #06989A
-URxvt*color7:     #D3D7CF
-URxvt*color8:     #555753
-URxvt*color9:     #EF2929
-URxvt*color10:    #8AE234
-URxvt*color11:    #FCE94F
-URxvt*color12:    #729FCF
-URxvt*color13:    #AD7FA8
-URxvt*color14:    #34E2E2
-URxvt*color15:    #EEEEEC
+urxvt*foreground: #cccccc
+urxvt*background: #222222
+
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
+
+urxvt*color0:    #6c6c6c
+urxvt*color1:    #e9897c
+urxvt*color2:    #b6e77d
+urxvt*color3:    #ecebbe
+urxvt*color4:    #a9cdeb
+urxvt*color5:    #ea96eb
+urxvt*color6:    #c9caec
+urxvt*color7:    #f2f2f2
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+urxvt*color8:    #747474
+urxvt*color9:    #f99286
+urxvt*color10:    #c3f786
+urxvt*color11:    #fcfbcc
+urxvt*color12:    #b6defb
+urxvt*color13:    #fba1fb
+urxvt*color14:    #d7d9fc
+urxvt*color15:    #e2e2e2
 
 URxvt*iso14755: false
 URxvt*perl-ext-common: default,matcher,clipboard,new-window,font-size
