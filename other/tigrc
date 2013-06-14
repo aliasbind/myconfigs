@@ -64,13 +64,11 @@ color signoff		yellow	default
 color default		default	default
 color cursor		yellow	black
 color status		green	default
-color title-blur	white	blue
-color title-focus	white	blue	bold
+color title-blur	white	black
+color title-focus	white	black	bold
 color main-date		blue	default
 color main-author	green	default
 color main-commit	default	default
 color main-delim	magenta	default
 color main-tag		magenta	default	bold
 color main-ref		cyan	default	bold
-
-# You can almost use vim: ft=muttrc
