@@ -62,3 +62,6 @@ ln -sf $INSTALLER_PATH/other/gtk3settings.ini ~/.config/gtk-3.0/settings.ini
 
 mkdir -p ~/.config/fontconfig/
 ln -sf $INSTALLER_PATH/other/fonts.conf ~/.config/fontconfig/fonts.conf
+
+# dircolors
+ln -sf $INSTALLER_PATH/other/dircolors ~/.dircolors
