@@ -40,7 +40,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id feh --bg-scale ~/.wallpaper.jpg
 exec --no-startup-id xset r rate 250 35
 exec --no-startup-id xmodmap ~/.xmodmap
-exec --no-startup-id sleep 30 && transmission-daemon --log-error -g ~/.config/transmission
+exec --no-startup-id sleep 30 && transmission-daemon
 exec --no-startup-id sleep 30 && redshift -l 44:26 -b 0.8 -t 5500:3700
 
 focus_follows_mouse no
@@ -198,7 +198,7 @@ bar {
 
 	colors {
 		background #0F0F0F
-		statusline #F5DEB3
+		statusline #FFFFFF
  
 		focused_workspace  #F5DEB3 #3B5998
 		active_workspace   #F5DEB3 #0F0F0F
