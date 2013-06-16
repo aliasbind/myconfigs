@@ -117,3 +117,12 @@ then
 else
 	echo -e "tigrc:\tSuccess"
 fi
+
+# vimperatorrc
+ln -sf $INSTALLER_PATH/other/vimperatorrc ~/.vimperatorrc
+if [ $? -ne 0 ]
+then
+	echo -e "vimperatorrc:\tFailed to create .vimperatorrc link"
+else
+	echo -e "vimperatorrc:\tSuccess"
+fi

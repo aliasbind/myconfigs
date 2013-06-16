@@ -1,4 +1,5 @@
 gtk-theme-name = "Clearlooks"
+gtk-icon-theme-name = "Gion"
 gtk-font-name = "Sans 10"
 
 style "no-resize-handle"

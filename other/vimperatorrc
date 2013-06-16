@@ -1,0 +1,9 @@
+"3.7 (created: 2013/04/03 18:20:07)
+
+imap jj <Esc>
+noremap j 5j
+noremap k 5k
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+source! /home/andrei/.vimperatorrc.local
+
+" vim: set ft=vimperator:
