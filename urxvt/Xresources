@@ -96,9 +96,9 @@ URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.clipboard.autocopy: true
 
-URxvt*font: xft:Terminus-9:antialias=false
-URxvt*boldFont: xft:Terminus-9:antialias=false
-URxvt*italicFont: xft:Terminus-9:antialias=false
+URxvt*font: xft:Terminus-9:lang=ro
+URxvt*boldFont: xft:Terminus-9:lang=ro
+URxvt*italicFont: xft:Terminus-9:lang=ro
 URxvt*scrollBar: false
 URxvt*saveLines: 65535
 
