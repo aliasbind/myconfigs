@@ -87,7 +87,7 @@ XTerm*background     : _background
 XTerm*cursorColor    : _cursorColor
 
 URxvt*iso14755: false
-URxvt*perl-ext-common: default,matcher,clipboard,new-window,font-size
+URxvt*perl-ext-common: default,clipboard,new-window,font-size
 URxvt*perl-lib: /home/andrei/.config/urxvt/
 URxvt.keysym.C-C: perl:clipboard:copy
 URxvt.keysym.C-V: perl:clipboard:paste

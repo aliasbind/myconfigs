@@ -16,10 +16,7 @@ set $movemod Mod1
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font xft:Terminus 9
 
-assign [class="Qees_zwave_tool"] 2
 for_window [class="Qees_zwave_tool"] floating enable
-
-assign [class="eu-qees-bridge-Main"] 2
 for_window [class="eu-qees-bridge-Main"] floating enable
 
 for_window [class="main"] floating enable
