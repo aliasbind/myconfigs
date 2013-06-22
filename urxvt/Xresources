@@ -38,7 +38,8 @@
 !TXT Normal, Normal, Cursor
 #define _foreground    #dcdccc
 #define _background    #222222
-#define _cursorColor   #8faf9f
+#define _cursorColor   #dcdccc
+!#define _cursorColor   #8faf9f
 
 URxvt*color0         : _color0
 URxvt*color1         : _color1
