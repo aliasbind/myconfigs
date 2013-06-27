@@ -6,20 +6,18 @@
 set show-rev-graph = yes	# Show revision graph?
 set line-number-interval = 5	# Interval between line numbers
 set tab-size = 8		# Number of spaces pr tab 
+set line-graphics = "utf-8"
 
 #
 # Key configuration
 #
 # Syntax: bind <keymap> <key> <request>
 
-bind main w scroll-line-up
-bind main s scroll-line-down
+bind generic g move-first-line
+bind generic G move-last-line
 
-bind diff a previous
-bind diff d next
-bind diff b move-first-line
-
-bind generic g view-next
+bind generic ^k view-next
+bind generic ^j view-next
 
 #
 # Color configuration
