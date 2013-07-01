@@ -126,3 +126,12 @@ then
 else
 	echo -e "vimperatorrc:\tSuccess"
 fi
+
+# xinitrc
+ln -sf $INSTALLER_PATH/other/xinitrc ~/.xinitrc
+if [ $? -ne 0 ]
+then
+	echo -e "xinitrc:\tFailed to create .xinitrc link"
+else
+	echo -e "xinitrc:\tSuccess"
+fi
