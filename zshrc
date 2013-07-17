@@ -43,3 +43,5 @@ if [ "$TERM" != "dumb" ]; then
 	eval $(dircolors -b ~/.dircolors)
 	zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 fi
+
+EDITOR=vim
