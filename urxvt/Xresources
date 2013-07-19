@@ -92,7 +92,7 @@ URxvt*perl-ext-common: default,clipboard,new-window,font-size
 URxvt*perl-lib: /home/andrei/.config/urxvt/
 URxvt.keysym.C-C: perl:clipboard:copy
 URxvt.keysym.C-V: perl:clipboard:paste
-URxvt.keysym.C-T: perl:new-window
+URxvt.keysym.Mod4-S-Return: perl:new-window
 URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.clipboard.autocopy: true
