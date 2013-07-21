@@ -1,7 +1,5 @@
 #!/bin/bash
 
-shopt -s extglob
-
 TARGZ=mail.tar.gz
 INSTALLER_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
