@@ -42,6 +42,7 @@ exec --no-startup-id dropboxd
 exec --no-startup-id nm-applet
 exec --no-startup-id sleep 30 && transmission-daemon
 exec --no-startup-id sleep 30 && redshift -l 44:26 -b 0.8 -t 5500:3700
+exec --no-startup-id offlineimap-notify
 
 # using the mouse, focus the windows on click only (no move over)
 focus_follows_mouse no
@@ -69,9 +70,6 @@ bindsym $mod+d exec --no-startup-id  dmenu_run
 # move window to scratchpad
 bindsym $movemod+q scratchpad show
 bindsym $movemod+a move scratchpad
-
-# lock screen
-bindsym $mod+l exec --no-startup-id i3lock
 
 # change focus
 bindsym $movemod+h focus left
