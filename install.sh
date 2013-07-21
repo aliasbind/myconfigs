@@ -135,3 +135,12 @@ then
 else
 	echo -e "xinitrc:\tSuccess"
 fi
+
+# profile
+ln -sf $INSTALLER_PATH/other/profile ~/.profile
+if [ $? -ne 0 ]
+then
+	echo -e "profile:\tFailed to create .profile link"
+else
+	echo -e "profile:\tSuccess"
+fi

@@ -1,0 +1,3 @@
+# Start key agents
+eval $(ssh-agent)
+eval $(gpg-agent --daemon)
