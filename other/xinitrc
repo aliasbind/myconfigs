@@ -5,3 +5,4 @@ if [ -f $HOME/.Xresources ]; then
 fi
 
 exec i3
+/usr/lib/systemd/systemd --user
