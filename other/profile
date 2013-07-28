@@ -1,3 +1,2 @@
 # Start key agents
-eval $(ssh-agent)
-eval $(gpg-agent --daemon)
+eval $(gpg-agent --daemon --enable-ssh-support)

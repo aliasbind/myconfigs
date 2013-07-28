@@ -33,7 +33,7 @@ else
     atool -a .$TARGZ \
         .offlineimap/work.pwd.gpg .offlineimaprc .offlineimap.py \
         .mutt/ \
-        .gnupg/{{secring,pubring}.gpg,gpg.conf}
+        .gnupg/{{secring,pubring}.gpg,gpg.conf,gpg-agent.conf}
 
     if [ $? -ne 0 ]
     then
