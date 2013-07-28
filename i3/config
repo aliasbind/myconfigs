@@ -182,7 +182,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # MPD keysyms
-bindsym $mod+F1 exec ncmpcpp toggle
+bindsym $mod+F1 exec --no-startup-id ncmpcpp toggle
 
 client.focused          #525252 #363636 #F5DEB3
 client.focused_inactive #333333 #0F0F0F #E3CCA1
