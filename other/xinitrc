@@ -4,5 +4,5 @@ if [ -f $HOME/.Xresources ]; then
 	xrdb -merge $HOME/.Xresources
 fi
 
+/usr/lib/systemd/systemd --user &
 exec i3
-/usr/lib/systemd/systemd --user

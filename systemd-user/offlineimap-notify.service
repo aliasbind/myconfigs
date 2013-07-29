@@ -1,6 +1,5 @@
 [Unit]
 Description=Start offlineimap as a daemon
-After=slim.service
 
 [Service]
 ExecStart=/usr/bin/offlineimap-notify

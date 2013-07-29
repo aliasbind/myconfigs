@@ -147,7 +147,8 @@ fi
 
 # systemd services
 mkdir -p ~/.config/systemd/user
-ln -sf $INSTALLER_PATH/systemd-user/offlineimap-notify.service ~/.config/systemd/user
+  # FIXME: This is a hardlink since symlinks don't work so well with systemd
+ln -f $INSTALLER_PATH/systemd-user/offlineimap-notify.service ~/.config/systemd/user
 
 pidof /usr/lib/systemd/systemd &> /dev/null
 if [ $? -ne 0 ]
