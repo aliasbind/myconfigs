@@ -14,8 +14,8 @@ fi
 if [ $1 == "-u" ]
 then
     echo Unpacking...
-    gpg -d $INSTALLER_PATH/$TARGZ.gpg
-    atool -x -f $INSTALLER_PATH/$TARGZ
+    gpg $INSTALLER_PATH/$TARGZ.gpg
+    atool -X . -f $INSTALLER_PATH/$TARGZ
     exit
 else
     echo Packing...
