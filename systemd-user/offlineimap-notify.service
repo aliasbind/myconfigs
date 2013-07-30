@@ -5,4 +5,4 @@ Description=Start offlineimap as a daemon
 ExecStart=/usr/bin/offlineimap-notify
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
