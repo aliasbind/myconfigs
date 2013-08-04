@@ -145,6 +145,15 @@ else
 	echo -e "profile:\tSuccess"
 fi
 
+# conkyrc
+ln -sf $INSTALLER_PATH/other/conkyrc ~/.conkyrc
+if [ $? -ne 0 ]
+then
+	echo -e "conkyrc:\tFailed to create .conkyrc link"
+else
+	echo -e "conkyrc:\tSuccess"
+fi
+
 # systemd services
 mkdir -p ~/.config/systemd/user
   # FIXME: This is a hardlink since symlinks don't work so well with systemd
