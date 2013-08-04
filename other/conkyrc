@@ -1,0 +1,33 @@
+background no
+out_to_console yes
+out_to_x no
+update_interval 5
+total_run_times 0
+short_units yes
+pad_percents 2
+mpd_host localhost
+mpd_port 6600
+override_utf8_locale yes
+use_spacer left
+
+TEXT
+[\
+  {"full_text": "/", "color": "\#AB6B74"},\
+  {"full_text": "${fs_free /}", "color":"\#687987"},\
+  {"full_text": "H", "color": "\#AB6B74"},\
+  {"full_text": "${fs_free /home}", "color":"\#687987"},\
+  {"full_text": "D", "color": "\#AB6B74"},\
+  {"full_text": "${fs_free /home/andrei/Downloads}", "color":"\#687987"},\
+  {"full_text": "W", "color": "\#AB6B74"},\
+  {"full_text": "${fs_free /media/world}", "color":"\#687987"},\
+  {"full_text": "⇋${addrs enp2s0}", "color":"\#5F9F74"},\
+  {"full_text": "↓${downspeed enp2s0}", "color":"\#536057"},\
+  {"full_text": "↑${upspeed enp2s0}", "color":"\#536057"},\
+  {"full_text": "$loadavg", "color":"\#DFDFDF"},\
+  {"full_text": "≣ $memeasyfree", "color":"\#B28D4C"},\
+  {"full_text": "${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ LRBS temperature}°C", "color":"\#DFDFDF"},\
+  $if_mpd_playing {"full_text": "♪  $mpd_artist - $mpd_title [$mpd_elapsed / $mpd_length] ", "color":"\#5F9F74"}, $endif
+  {"full_text": "${time %a %d %b %H:%M:%S}", "color":"\#DFDFDF"}\
+],
+
+# vim: et: ts=2: sw=2: tw=0:
