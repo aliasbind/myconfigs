@@ -1,3 +1,2 @@
 # Start key agents
-eval $(ssh-agent)
-eval $(gpg-agent --daemon)
+eval $(keychain --eval --agents gpg,ssh -Q --quiet)

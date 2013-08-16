@@ -26,7 +26,7 @@ TEXT
   {"full_text": "$loadavg", "color":"\#DFDFDF"},\
   {"full_text": "≣ $memeasyfree", "color":"\#B28D4C"},\
   {"full_text": "${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ LRBS temperature}°C", "color":"\#DFDFDF"},\
-  $if_mpd_playing {"full_text": "♪  $mpd_artist - $mpd_title [$mpd_elapsed / $mpd_length] ", "color":"\#5F9F74"}, $endif \
+  ${if_running mpd} {"full_text": "♪  $mpd_artist - $mpd_title [$mpd_elapsed / $mpd_length] ", "color":"\#5F9F74"}, $endif\
   {"full_text": "${time %a %d %b %H:%M:%S}", "color":"\#DFDFDF"}\
 ],
 
