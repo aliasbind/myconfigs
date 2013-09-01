@@ -12,7 +12,8 @@ nnoremap <C-c> <C-v><C-c>
 nnoremap <C-v> <C-v><C-v>
 nnoremap <C-x> <C-v><C-x>
 nnoremap <C-t> i<C-t>
-nnoremap <Esc> <Esc> :js toggle_bottombar()<CR>
+nnoremap <C-P> :winopen -private<CR>
+nnoremap <Esc> <Esc>:js toggle_bottombar()<CR>
 nnoremap <C-F8> :js toggle_bottombar()<CR>
 
 " Insert Mode Mappings
@@ -22,6 +23,7 @@ inoremap <C-v> <C-v><C-v>
 inoremap <C-x> <C-v><C-x>
 inoremap <C-a> <Ins><C-a><Ins>
 inoremap <C-t> <Ins><C-t><Ins>
+inoremap <C-P> <Esc> :winopen -private<CR>
 inoremap <C-F8> :js toggle_bottombar()<CR>
 
 :js << EOF
