@@ -1,10 +1,55 @@
-"3.7 (created: 2013/04/03 18:20:07)
-
 imap jj <Esc>
 noremap j 5j
 noremap k 5k
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set nohlsearch
 source! /home/andrei/.vimperatorrc.local
+
+" Normal Mode Mappings
+nnoremap <C-f> :js toggle_bottombar()<CR>/
+nnoremap <C-w> :tabclose<CR>
+nnoremap <C-c> <C-v><C-c>
+nnoremap <C-v> <C-v><C-v>
+nnoremap <C-x> <C-v><C-x>
+nnoremap <C-t> i<C-t>
+nnoremap <Esc> <Esc> :js toggle_bottombar()<CR>
+nnoremap <C-F8> :js toggle_bottombar()<CR>
+
+" Insert Mode Mappings
+inoremap <C-w> <Esc>:tabclose<CR>
+inoremap <C-c> <C-v><C-c>
+inoremap <C-v> <C-v><C-v>
+inoremap <C-x> <C-v><C-x>
+inoremap <C-a> <Ins><C-a><Ins>
+inoremap <C-t> <Ins><C-t><Ins>
+inoremap <C-F8> :js toggle_bottombar()<CR>
+
+:js << EOF
+function toggle_bottombar() {
+    var bb = document.getElementById('liberator-bottombar');
+    if (!bb)
+        return;
+    bb.style.height = (bb.style.height == '') ? '0px' : '';
+    bb.style.overflow = (bb.style.height == '') ? '' : 'hidden';
+}
+
+function enable_bottombar() {
+    var bb = document.getElementById('liberator-bottombar');
+    if (!bb)
+        return;
+    bb.style.height = '0px'
+    bb.style.overflow = ''
+}
+
+function disable_bottombar() {
+    var bb = document.getElementById('liberator-bottombar');
+    if (!bb)
+        return;
+    bb.style.height = ''
+    bb.style.overflow = 'hidden'
+}
+
+toggle_bottombar()
+EOF
 
 " vim: set ft=vimperator:
