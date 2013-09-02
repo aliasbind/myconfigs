@@ -24,31 +24,37 @@ inoremap <C-t> <Ins><C-t><Ins>
 inoremap <C-S-p> <Esc>:winopen -private<CR>
 
 :js << EOF
+var enabled = false
+
 function toggle_bottombar() {
     var bb = document.getElementById('liberator-bottombar');
     if (!bb)
         return;
-    bb.style.height = (bb.style.height == '') ? '0px' : '';
-    bb.style.overflow = (bb.style.height == '') ? '' : 'hidden';
+    if (enabled)
+    	disable_bottombar()
+    else
+    	enable_bottombar()
 }
 
 function enable_bottombar() {
     var bb = document.getElementById('liberator-bottombar');
     if (!bb)
         return;
-    bb.style.height = '0px'
-    bb.style.overflow = ''
+    bb.style.height = '';
+    bb.style.overflow = '';
+    enabled = true;
 }
 
 function disable_bottombar() {
     var bb = document.getElementById('liberator-bottombar');
     if (!bb)
         return;
-    bb.style.height = ''
-    bb.style.overflow = 'hidden'
+    bb.style.height = '0px';
+    bb.style.overflow = 'hidden';
+    enabled = false;
 }
 
-toggle_bottombar()
+enable_bottombar()
 EOF
 
 " vim: set ft=vimperator:
