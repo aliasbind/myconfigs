@@ -6,14 +6,14 @@ set nohlsearch
 source! /home/andrei/.vimperatorrc.local
 
 " Normal Mode Mappings
-nnoremap <C-f> :js toggle_bottombar()<CR>/
+nnoremap <C-f> :js enable_bottombar()<CR>/
+nnoremap / :js enable_bottombar()<CR>/
 nnoremap <C-w> :tabclose<CR>
-nnoremap <C-t> i<C-t>
 nnoremap <C-c> <Ins><C-c><Ins>
 nnoremap <C-v> <Ins><C-v><Ins>
-nnoremap <C-P> :winopen -private<CR>
-nnoremap <Esc> <Esc>:js toggle_bottombar()<CR>
-nnoremap <C-F8> :js toggle_bottombar()<CR>
+nnoremap <C-t> <Ins><C-t><Ins>
+nnoremap <C-S-p> :winopen -private<CR>
+nnoremap ` :js toggle_bottombar()<CR>
 
 " Insert Mode Mappings
 inoremap <C-w> <Esc>:tabclose<CR>
@@ -21,8 +21,7 @@ inoremap <C-a> <Ins><C-a><Ins>
 inoremap <C-c> <Ins><C-c><Ins>
 inoremap <C-v> <Ins><C-v><Ins>
 inoremap <C-t> <Ins><C-t><Ins>
-inoremap <C-P> <Esc> :winopen -private<CR>
-inoremap <C-F8> :js toggle_bottombar()<CR>
+inoremap <C-S-p> <Esc>:winopen -private<CR>
 
 :js << EOF
 function toggle_bottombar() {
