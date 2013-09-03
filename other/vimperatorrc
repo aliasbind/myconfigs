@@ -54,7 +54,7 @@ function disable_bottombar() {
     enabled = false;
 }
 
-enable_bottombar()
+disable_bottombar()
 EOF
 
 " vim: set ft=vimperator:
