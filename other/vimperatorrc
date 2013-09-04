@@ -13,6 +13,7 @@ nnoremap <C-c> <Ins><C-c><Ins>
 nnoremap <C-v> <Ins><C-v><Ins>
 nnoremap <C-t> <Ins><C-t><Ins>
 nnoremap <C-S-p> :winopen -private<CR>
+nnoremap gf f
 nnoremap ` :js toggle_bottombar()<CR>
 
 " Insert Mode Mappings
