@@ -154,6 +154,11 @@ else
 	echo -e "conkyrc:\tSuccess"
 fi
 
+# mimelist
+mkdir -p ~/.local/share/applications
+ln -sf $INSTALLER_PATH/mime/mimeapps.list ~/.local/share/applications/
+ln -sf $INSTALLER_PATH/mime/transmission-daemon.desktop ~/.local/share/applications/
+
 # systemd services
 mkdir -p ~/.config/systemd/user
   # FIXME: This is a hardlink since symlinks don't work so well with systemd
