@@ -5,6 +5,11 @@ set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set nohlsearch
 source! /home/andrei/.vimperatorrc.local
 
+" Hack to get rid of the dotted line in the statusbar
+hi Normal		background: #E0E0E0;
+hi CmdLine		background: #E0E0E0;
+hi ContentSeparator     border:none;
+
 " Normal Mode Mappings
 nnoremap <C-f> :js enable_bottombar()<CR>/
 nnoremap / :js enable_bottombar()<CR>/
@@ -65,6 +70,7 @@ function enable_bottombar() {
         return;
     bb.style.height = '';
     bb.style.overflow = '';
+
     enabled = true;
 }
 
@@ -74,6 +80,7 @@ function disable_bottombar() {
         return;
     bb.style.height = '0px';
     bb.style.overflow = 'hidden';
+
     enabled = false;
 }
 
