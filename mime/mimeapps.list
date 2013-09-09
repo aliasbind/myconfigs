@@ -31,6 +31,9 @@ message/rfc822=userapp-Thunderbird-0U8E0W.desktop;
 application/x-extension-eml=userapp-Thunderbird-0U8E0W.desktop;
 text/plain=gedit.desktop;
 application/x-shellscript=gedit.desktop;
+text/x-chdr=gedit.desktop;
+application/x-compressed-tar=file-roller.desktop;
+text/x-makefile=gedit.desktop;
 
 [Default Applications]
 application/x-bittorrent=transmission-daemon.desktop
@@ -65,6 +68,9 @@ message/rfc822=userapp-Thunderbird-0U8E0W.desktop
 application/x-extension-eml=userapp-Thunderbird-0U8E0W.desktop
 text/plain=gedit.desktop
 application/x-shellscript=gedit.desktop
+text/x-chdr=gedit.desktop
+application/x-compressed-tar=file-roller.desktop
+text/x-makefile=gedit.desktop
 
 [Removed Associations]
 application/x-bittorrent=kde4-ktorrent.desktop;

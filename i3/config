@@ -200,6 +200,7 @@ client.urgent           #856E23 #900000 #F5DEB3
 # finds out, if available)
 bar {
 	status_command pkill conky || echo '{"version": 1} [[],' && conky -q
+	position top
 
 	colors {
 		background #0F0F0F
