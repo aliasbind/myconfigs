@@ -1,6 +1,6 @@
 imap jj <Esc>
-noremap j 5j
-noremap k 5k
+noremap j 8j
+noremap k 8k
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set nohlsearch
 source! /home/andrei/.vimperatorrc.local
