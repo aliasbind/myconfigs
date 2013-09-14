@@ -207,8 +207,8 @@ bar {
 		statusline #DCDCCC
  		separator  #DCDCCC
  
-		focused_workspace  #3B5998 #0F0F0F #DCDCCC
-		active_workspace   #85753A #0F0F0F #DCDCCC
+		focused_workspace  #3B5998 #1E1E1E #DCDCCC
+		active_workspace   #85753A #1E1E1E #DCDCCC
 		inactive_workspace #DCDCCC #1E1E1E
 		urgent_workspace   #DCDCCC #900000
 	}
