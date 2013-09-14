@@ -193,7 +193,7 @@ bindsym $mod+F1 exec --no-startup-id ncmpcpp toggle
 
 client.focused          #525252 #363636 #F5DEB3
 client.focused_inactive #333333 #0F0F0F #E3CCA1
-client.unfocused        #333333 #010101 #85753A
+client.unfocused        #333333 #0F0F0F #85753A
 client.urgent           #856E23 #900000 #F5DEB3
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -204,11 +204,12 @@ bar {
 
 	colors {
 		background #0F0F0F
-		statusline #DFDFDF
+		statusline #DCDCCC
+ 		separator  #DCDCCC
  
-		focused_workspace  #DFDFDF #3B5998
-		active_workspace   #DFDFDF #0F0F0F
-		inactive_workspace #DFDFDF #1E1E1E
-		urgent_workspace   #DFDFDF #900000
+		focused_workspace  #3B5998 #0F0F0F #DCDCCC
+		active_workspace   #85753A #0F0F0F #DCDCCC
+		inactive_workspace #DCDCCC #1E1E1E
+		urgent_workspace   #DCDCCC #900000
 	}
 }
