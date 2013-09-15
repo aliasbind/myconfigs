@@ -71,7 +71,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+l exec --no-startup-id i3lock -c 000000
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -fn "-xos4-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-1"
+bindsym $mod+d exec --no-startup-id dmenu_run -b -fn "-xos4-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-1"
 
 # move window to scratchpad
 bindsym $movemod+q scratchpad show
