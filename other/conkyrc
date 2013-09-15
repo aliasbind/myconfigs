@@ -19,7 +19,6 @@ TEXT
   {"full_text": "↓${downspeed enp2s0}", "color":"\#536057"},\
   {"full_text": "↑${upspeed enp2s0}", "color":"\#536057"},\
   {"full_text": "$loadavg", "color":"\#536057"},\
-  {"full_text": "${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ LRBS temperature}°C", "color":"\#536057"},\
   {"full_text": "${time %A %d %b %H:%M}", "color":"\#DCDCCC"}\
 ],
 

@@ -183,3 +183,6 @@ if [ $? -ne 0 ]
 then
 	systemctl --user start offlineimap-notify
 fi
+
+# Fix Xorg font path
+sudo cp $INSTALLER_PATH/other/10-fontpath.conf /etc/X11/xorg.conf.d/
