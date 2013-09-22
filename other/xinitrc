@@ -4,6 +4,4 @@ if [ -f $HOME/.Xresources ]; then
 	xrdb -merge $HOME/.Xresources
 fi
 
-pkill systemd
-/usr/lib/systemd/systemd --user &
 exec i3
