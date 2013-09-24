@@ -92,11 +92,12 @@ URxvt*keysym.Home: \033[1~
 URxvt*keysym.End: \033[4~
 
 URxvt*iso14755: false
-URxvt*perl-ext-common: default,clipboard,new-window,font-size
+URxvt*perl-ext-common: default,clipboard,new-window,font-size,file-explorer
 URxvt*perl-lib: /home/andrei/.config/urxvt/
 URxvt.keysym.C-C: perl:clipboard:copy
 URxvt.keysym.C-V: perl:clipboard:paste
 URxvt.keysym.Mod4-S-Return: perl:new-window
+URxvt.keysym.Mod4-S-n: perl:file-explorer
 URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.clipboard.autocopy: true

@@ -1,0 +1,25 @@
+#! perl -w
+
+use Cwd;
+use strict;
+use warnings;
+
+my $shellpid;
+
+sub on_child_start {
+	my ($self, $pid) = @_;
+	$shellpid = $pid;
+
+	()
+}
+
+sub on_user_command {
+	my ($self, $cmd) = @_;
+
+	if ($cmd eq "file-explorer") {
+		my $dir = readlink("/proc/" . $shellpid . "/cwd");
+		system('xdg-open ' . $dir . ' &');
+	}
+
+	()
+}
