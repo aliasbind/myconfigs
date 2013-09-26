@@ -97,7 +97,7 @@ URxvt*perl-lib: /home/andrei/.config/urxvt/
 URxvt.keysym.C-C: perl:clipboard:copy
 URxvt.keysym.C-V: perl:clipboard:paste
 URxvt.keysym.Mod4-S-Return: perl:new-window
-URxvt.keysym.Mod4-S-n: perl:file-explorer
+URxvt.keysym.Mod4-S-N: perl:file-explorer
 URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.clipboard.autocopy: true
