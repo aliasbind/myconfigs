@@ -18,7 +18,7 @@ sub on_user_command {
 
 	if ($cmd eq "new-window") {
 		my $dir = readlink("/proc/" . $shellpid . "/cwd");
-		system ('urxvt -cd ' . $dir . ' &');
+		system ('urxvt -cd "' . $dir . '" &');
 	}
 
 	()
