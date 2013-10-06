@@ -158,6 +158,7 @@ fi
 mkdir -p ~/.local/share/applications
 ln -sf $INSTALLER_PATH/mime/mimeapps.list ~/.local/share/applications/
 ln -sf $INSTALLER_PATH/mime/transmission-daemon.desktop ~/.local/share/applications/
+ln -sf $INSTALLER_PATH/mime/nemo.desktop ~/.local/share/applications/
 
 # systemd services
 mkdir -p ~/.config/systemd/user
