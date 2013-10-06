@@ -16,11 +16,8 @@ application/x-rar=vlc.desktop;squeeze.desktop;file-roller.desktop;
 video/mpeg=vlc.desktop;
 x-scheme-handler/file=exo-file-manager.desktop
 x-scheme-handler/trash=exo-file-manager.desktop
-image/png=display.im6.desktop;ristretto.desktop;feh.desktop;
-application/octet-stream=vlc.desktop;
+image/png=viewnior.desktop;ristretto.desktop;feh.desktop;
 image/jpeg=ristretto.desktop;viewnior.desktop;
-x-scheme-handler/ftp=firefox.desktop;
-x-scheme-handler/chrome=firefox.desktop;
 application/x-extension-htm=firefox.desktop;
 application/x-extension-html=firefox.desktop;
 application/x-extension-shtml=firefox.desktop;
@@ -34,6 +31,7 @@ application/x-shellscript=gedit.desktop;
 text/x-chdr=gedit.desktop;
 application/x-compressed-tar=file-roller.desktop;
 text/x-makefile=gedit.desktop;
+application/x-wine-extension-ini=gedit.desktop;
 
 [Default Applications]
 application/x-bittorrent=transmission-daemon.desktop
