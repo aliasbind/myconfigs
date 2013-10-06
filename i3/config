@@ -60,7 +60,7 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # start nemo
-bindsym $mod+n exec nemo --no-desktop
+bindsym $mod+n exec --no-startup-id nemo --no-desktop
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal

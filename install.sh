@@ -160,30 +160,5 @@ ln -sf $INSTALLER_PATH/mime/mimeapps.list ~/.local/share/applications/
 ln -sf $INSTALLER_PATH/mime/transmission-daemon.desktop ~/.local/share/applications/
 ln -sf $INSTALLER_PATH/mime/nemo.desktop ~/.local/share/applications/
 
-# systemd services
-mkdir -p ~/.config/systemd/user
-  # FIXME: This is a hardlink since symlinks don't work so well with systemd
-ln -f $INSTALLER_PATH/systemd-user/offlineimap-notify.service ~/.config/systemd/user
-
-pidof /usr/lib/systemd/systemd &> /dev/null
-if [ $? -ne 0 ]
-then
-	echo -e "\nStarting systemd user session..."
-	/usr/lib/systemd/systemd --user &
-	sleep 0.5
-fi
-
-# FIXME: Need a function for enabling and starting services
-systemctl --user is-enabled offlineimap-notify &> /dev/null
-if [ $? -ne 0 ]
-then
-	systemctl --user enable offlineimap-notify
-fi
-systemctl --user is-active offlineimap-notify &> /dev/null
-if [ $? -ne 0 ]
-then
-	systemctl --user start offlineimap-notify
-fi
-
 # Fix Xorg font path
 sudo cp $INSTALLER_PATH/other/10-fontpath.conf /etc/X11/xorg.conf.d/
