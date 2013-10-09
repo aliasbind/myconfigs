@@ -102,6 +102,10 @@ URxvt.keysym.C-equal: perl:font-size:increase
 URxvt.keysym.C-minus: perl:font-size:decrease
 URxvt.clipboard.autocopy: true
 
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+
 URxvt*font: -xos4-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-1
 URxvt*boldFont: -xos4-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-1
 URxvt*italicFont: -xos4-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-1
