@@ -1,5 +1,5 @@
 gtk-theme-name = "Adwaita"
-gtk-icon-theme-name = "Gion"
+gtk-icon-theme-name = "elementary"
 gtk-font-name = "Sans 10"
 
 style "no-resize-handle"
