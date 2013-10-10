@@ -60,7 +60,7 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # start nautilus
-bindsym $mod+n exec dbus-launch nautilus --no-desktop
+bindsym $mod+n exec nautilus --no-desktop
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
