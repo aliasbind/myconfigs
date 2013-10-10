@@ -18,7 +18,7 @@ sub on_user_command {
 
 	if ($cmd eq "file-explorer") {
 		my $dir = readlink("/proc/" . $shellpid . "/cwd");
-		system('xdg-open "' . $dir . '" &');
+		system('dbus-launch nautilus "' . $dir . '" &');
 	}
 
 	()

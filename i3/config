@@ -34,7 +34,7 @@ for_window [class="Steam"] border none
 
 for_window [class="File-roller"] floating enable
 for_window [class="Gedit"] floating enable
-for_window [class="Nemo"] floating enable
+for_window [class="Nautilus"] floating enable
 
 exec --no-startup-id numlockx on
 exec --no-startup-id feh --bg-scale ~/.wallpaper.jpg
@@ -59,8 +59,8 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
-# start nemo
-bindsym $mod+n exec --no-startup-id nemo --no-desktop
+# start nautilus
+bindsym $mod+n exec dbus-launch nautilus --no-desktop
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
