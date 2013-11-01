@@ -65,6 +65,9 @@ bindsym $mod+n exec nautilus --no-desktop
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# toggle redshift
+bindsym $mod+Shift+s exec --no-startup-id pkill redshift || (redshift -l 44:26 -b 1 -t 5800:3800 &)
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
