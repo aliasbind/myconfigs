@@ -18,14 +18,14 @@ echo -e "dunst:\tSuccess"
 URXVT_CONFIG_DIR=~/.config
 ln -fs $INSTALLER_PATH/urxvt/Xresources ~/.Xresources
 ln -fs $INSTALLER_PATH/urxvt/ $URXVT_CONFIG_DIR
-xrdb ~/.Xresources
 
-command -v xrdb 2>&1 > /dev/null
+command -v xrdb &> /dev/null
 if [ $? -ne 0 ]
 then
 	echo -e "urxvt:\tInstall package containing xrdb"
 else
-	command -v xsel 2>&1 > /dev/null
+	xrdb ~/.Xresources
+	command -v xsel &> /dev/null
 	if [ $? -ne 0 ]
 	then
 		echo -e "urxvt:\tInstall package containing xsel"
@@ -43,13 +43,6 @@ then
 	then
 		echo -e "vim:\tFailed to install configuration directory."
 		exit 1
-	fi
-	ln -sf ~/.vim/vimrc ~/.vimrc
-	if [ $? -ne 0 ]
-	then
-		echo -e "vim:\tFailed to install vimrc."
-	else
-		echo -e "vim:\tSuccess!"
 	fi
 else
 	echo -e "vim:\tConfiguration was not installed because you already have"
@@ -158,7 +151,25 @@ fi
 mkdir -p ~/.local/share/applications
 ln -sf $INSTALLER_PATH/mime/mimeapps.list ~/.local/share/applications/
 ln -sf $INSTALLER_PATH/mime/transmission-daemon.desktop ~/.local/share/applications/
-ln -sf $INSTALLER_PATH/mime/nemo.desktop ~/.local/share/applications/
+
+# set Qt to use GTK themes
+QT_CONFIG=~/.config/Trolltech.conf
+QT_SETTING=$(cat << EOF
+[Qt]
+style=GTK+
+EOF
+)
+
+grep 'style=GTK+' $QT_CONFIG &> /dev/null
+if [ $? -ne 0 ]
+then
+	echo "$QT_SETTING" >> "$QT_CONFIG"
+fi
+
+# SYSTEM CONFIGURATION FILES
 
 # Fix Xorg font path
-sudo cp $INSTALLER_PATH/other/10-fontpath.conf /etc/X11/xorg.conf.d/
+sudo cp $INSTALLER_PATH/sysconfs/10-fontpath.conf /etc/X11/xorg.conf.d/
+
+# slim.conf
+sudo cp $INSTALLER_PATH/sysconfs/slim.conf /etc/slim.conf
