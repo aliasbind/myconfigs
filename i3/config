@@ -48,6 +48,8 @@ exec --no-startup-id pkill transmission-da; sleep 3 && transmission-daemon
 exec --no-startup-id pkill redshift || sleep 3 && redshift -l 44:26 -b 0.9 -t 5500:3700
 exec --no-startup-id pkill offlineimap || sleep 3 && offlineimap-notify &> /tmp/offlineimap-log
 
+new_window normal 1
+
 # using the mouse, focus the windows on click only (no move over)
 focus_follows_mouse no
 
@@ -195,7 +197,7 @@ bindsym $mod+r mode "resize"
 # MPD keysyms
 bindsym $mod+F1 exec --no-startup-id ncmpcpp toggle
 
-client.focused          #525252 #363636 #F5DEB3
+client.focused          #3B59BB #26619C #DCDCCC
 client.focused_inactive #333333 #0F0F0F #E3CCA1
 client.unfocused        #333333 #0F0F0F #85753A
 client.urgent           #856E23 #900000 #F5DEB3
