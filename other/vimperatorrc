@@ -18,6 +18,7 @@ nnoremap <C-v> <Ins><C-v><Ins>
 nnoremap <C-t> <Ins><C-t><Ins>
 nnoremap <C-S-p> :winopen -private<CR>
 nnoremap gf f
+nnoremap / i<C-f>
 nnoremap : :js enable_bottombar()<CR> :
 nnoremap ` :js disable_bottombar()<CR>
 
