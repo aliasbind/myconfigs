@@ -1,34 +1,36 @@
 imap jj <Esc>
 noremap j 8j
 noremap k 8k
+
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set nohlsearch
-source! /home/andrei/.vimperatorrc.local
 
 " Hack to get rid of the dotted line in the statusbar
 hi Normal		background: #E0E0E0;
 hi CmdLine		background: #E0E0E0;
-hi ContentSeparator     border:none;
+hi ContentSeparator     border: none;
 
 " Normal Mode Mappings
-nnoremap <C-f> :js enable_bottombar()<CR>/
-nnoremap / :js enable_bottombar()<CR>/
+nnoremap <C-f> i<C-f>
 nnoremap <C-w> :tabclose<CR>
 nnoremap <C-c> <Ins><C-c><Ins>
 nnoremap <C-v> <Ins><C-v><Ins>
 nnoremap <C-t> <Ins><C-t><Ins>
 nnoremap <C-S-p> :winopen -private<CR>
 nnoremap gf f
-nnoremap ` :js toggle_bottombar()<CR>
+nnoremap : :js enable_bottombar()<CR> :
+nnoremap ` :js disable_bottombar()<CR>
 
 " Insert Mode Mappings
+inoremap <C-f> <Esc>i<C-f>
 inoremap <C-w> <Esc>:tabclose<CR>
 inoremap <C-a> <Ins><C-a><Ins>
 inoremap <C-c> <Ins><C-c><Ins>
 inoremap <C-v> <Ins><C-v><Ins>
 inoremap <C-t> <Ins><C-t><Ins>
-inoremap <C-S-p> <Esc>:winopen -private<CR>
+inoremap <C-S-p> <Esc><Esc>:winopen -private<CR>
 
+" Tab specific operations
 map <A-!> :tabmove 0<CR>
 map <A-@> :tabmove 1<CR>
 map <A-#> :tabmove 2<CR>
@@ -83,6 +85,20 @@ function disable_bottombar() {
 
     enabled = false;
 }
+
+mappings.addUserMap([modes.INSERT], ["<C-g>"], "custom Esc",
+   function () {
+     var findbar = window.gFindBar;
+     if (!findbar.hidden)
+       findbar.close();
+   },{});
+
+mappings.addUserMap([modes.NORMAL], ["<C-g>"], "custom Esc",
+   function () {
+     var findbar = window.gFindBar;
+     if (!findbar.hidden)
+       findbar.close();
+   },{});
 
 disable_bottombar()
 EOF
