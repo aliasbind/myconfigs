@@ -171,5 +171,8 @@ fi
 # Fix Xorg font path
 sudo cp $INSTALLER_PATH/sysconfs/10-fontpath.conf /etc/X11/xorg.conf.d/
 
+# Set keyboard layout to Romanian
+sudo cp $INSTALLER_PATH/sysconfs/10-keyboard.conf /etc/X11/xorg.conf.d/
+
 # slim.conf
 sudo cp $INSTALLER_PATH/sysconfs/slim.conf /etc/slim.conf
