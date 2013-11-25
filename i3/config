@@ -37,7 +37,7 @@ for_window [class="Gedit"] floating enable
 for_window [class="Nautilus"] floating enable
 
 exec --no-startup-id numlockx on
-exec --no-startup-id feh --bg-scale ~/.wallpaper.jpg
+exec --no-startup-id feh --bg-center ~/.wallpaper.jpg
 exec --no-startup-id xset r rate 250 35
 exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-startup-id dropboxd
