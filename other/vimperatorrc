@@ -32,16 +32,16 @@ inoremap <C-t> <Ins><C-t><Ins>
 inoremap <C-S-p> <Esc><Esc>:winopen -private<CR>
 
 " Tab specific operations
-map <A-!> :tabmove 0<CR>
-map <A-@> :tabmove 1<CR>
-map <A-#> :tabmove 2<CR>
-map <A-$> :tabmove 3<CR>
-map <A-%> :tabmove 4<CR>
-map <A-^> :tabmove 5<CR>
-map <A-&> :tabmove 6<CR>
-map <A-*> :tabmove 7<CR>
-map <A-(> :tabmove 8<CR>
-map <A-)> :tabmove 9<CR>
+map <A-!> :tabmove 0<CR>`
+map <A-@> :tabmove 1<CR>`
+map <A-#> :tabmove 2<CR>`
+map <A-$> :tabmove 3<CR>`
+map <A-%> :tabmove 4<CR>`
+map <A-^> :tabmove 5<CR>`
+map <A-&> :tabmove 6<CR>`
+map <A-*> :tabmove 7<CR>`
+map <A-(> :tabmove 8<CR>`
+map <A-)> :tabmove 9<CR>`
 
 imap <A-!> <ESC>:tabmove 0<CR>
 imap <A-@> <ESC>:tabmove 1<CR>
