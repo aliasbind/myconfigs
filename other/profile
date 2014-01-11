@@ -1,2 +1,5 @@
 # Start key agents
 eval $(keychain --eval --agents gpg,ssh -Q --quiet)
+
+# Perforce variables
+export P4CONFIG=.p4config
