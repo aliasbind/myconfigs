@@ -29,10 +29,8 @@ plugins=(git command-not-found autojump)
 
 source $ZSH/oh-my-zsh.sh
 
-# msp-gcc compiler suite
-PATH=$PATH:/opt/msp430-gcc/bin
 # ruby gems
-PATH=$PATH:~/.gem/ruby/2.0.0/bin
+PATH=$PATH:~/.gem/ruby/2.1.0/bin
 
 alias c='transmission-remote-cli'
 alias m='mutt'
@@ -48,3 +46,5 @@ if [ "$TERM" != "dumb" ]; then
 fi
 
 EDITOR=vim
+
+export P4CONFIG=.p4config
