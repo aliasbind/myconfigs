@@ -1,0 +1,6 @@
+set arrowstyle=highlight
+set winsplit=top_big
+
+hi SelectedLineNr cterm=standout
+
+imap jj <ESC>

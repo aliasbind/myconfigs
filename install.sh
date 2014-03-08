@@ -147,6 +147,10 @@ else
 	echo -e "conkyrc:\tSuccess"
 fi
 
+# cgdb
+mkdir -p ~/.cgdb/
+ln -sf $INSTALLER_PATH/other/cgdbrc ~/.cgdb/cgdbrc
+
 # mimelist
 mkdir -p ~/.local/share/applications
 ln -sf $INSTALLER_PATH/mime/mimeapps.list ~/.local/share/applications/
