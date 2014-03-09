@@ -150,6 +150,21 @@ fi
 # cgdb
 mkdir -p ~/.cgdb/
 ln -sf $INSTALLER_PATH/other/cgdbrc ~/.cgdb/cgdbrc
+if [ $? -ne 0 ]
+then
+	echo -e "cgdbrc:\tFailed to create cgdbrc link"
+else
+	echo -e "cgdbrc:\tSuccess"
+fi
+
+# calcrc
+ln -sf $INSTALLER_PATH/other/calcrc ~/.calcrc
+if [ $? -ne 0 ]
+then
+	echo -e "calcrc:\tFailed to create calcrc link"
+else
+	echo -e "calcrc:\tSuccess"
+fi
 
 # mimelist
 mkdir -p ~/.local/share/applications
