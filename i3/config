@@ -16,11 +16,6 @@ set $movemod Mod1
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font -xos4-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-1
 
-for_window [class="Qees_zwave_tool"] floating enable
-for_window [class="eu-qees-bridge-Main"] floating enable
-
-for_window [class="main"] floating enable
-
 for_window [class="Wine"] floating enable
 for_window [class="Skype"] floating enable
 for_window [class="Pidgin"] floating enable
@@ -40,8 +35,6 @@ exec --no-startup-id numlockx on
 exec --no-startup-id feh --bg-center ~/.wallpaper.jpg
 exec --no-startup-id xset r rate 250 35
 exec --no-startup-id xmodmap ~/.xmodmap
-exec --no-startup-id dropboxd
-exec --no-startup-id nm-applet
 
 exec --no-startup-id pkill pulseaudio; sleep 3 && pulseaudio --start
 exec --no-startup-id pkill transmission-da; sleep 3 && transmission-daemon
