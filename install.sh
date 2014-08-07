@@ -38,7 +38,7 @@ fi
 # vim
 if [ ! -d ~/.vim ]
 then
-	git clone --recursive git@github.com:aliasbind/vimconfig.git ~/.vim
+	git clone --recursive https://github.com/aliasbind/vimconfig.git ~/.vim
 	if [ $? -ne 0 ]
 	then
 		echo -e "vim:\tFailed to install configuration directory."
