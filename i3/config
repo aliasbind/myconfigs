@@ -19,7 +19,6 @@ font -xos4-terminus-*-*-*-*-*-*-*-*-*-*-iso10646-1
 for_window [class="Wine"] floating enable
 for_window [class="Skype"] floating enable
 for_window [class="Pidgin"] floating enable
-for_window [class="Qtcreator"] floating enable
 for_window [class="Vlc"] floating enable
 for_window [class="Transmission-gtk"] floating enable
 for_window [class="VirtualBox"] floating enable
