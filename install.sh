@@ -129,13 +129,13 @@ else
 	echo -e "xinitrc:\tSuccess"
 fi
 
-# profile
-ln -sf $INSTALLER_PATH/other/profile ~/.profile
+# bash_profile
+ln -sf $INSTALLER_PATH/other/bash_profile ~/.bash_profile
 if [ $? -ne 0 ]
 then
-	echo -e "profile:\tFailed to create .profile link"
+	echo -e "bash_profile:\tFailed to create .bash_profile link"
 else
-	echo -e "profile:\tSuccess"
+	echo -e "bash_profile:\tSuccess"
 fi
 
 # conkyrc

@@ -1,5 +1,0 @@
-# Start key agents
-eval $(keychain --eval --agents ssh -Q --quiet)
-
-# Perforce variables
-export P4CONFIG=.p4config
