@@ -29,6 +29,7 @@ for_window [class="Steam"] border none
 for_window [class="File-roller"] floating enable
 for_window [class="Gedit"] floating enable
 for_window [class="Nautilus"] floating enable
+for_window [class="mpv"] floating enable
 
 exec --no-startup-id numlockx on
 exec --no-startup-id feh --bg-center ~/.wallpaper.jpg
@@ -182,7 +183,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # MPD keysyms
-bindsym $mod+F1 exec --no-startup-id ncmpcpp toggle
+bindsym $mod+F1 exec --no-startup-id mpc toggle
 
 client.focused          #3B59BB #26619C #DCDCCC
 client.focused_inactive #333333 #0F0F0F #E3CCA1
