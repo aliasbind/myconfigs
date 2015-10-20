@@ -30,7 +30,7 @@ plugins=(git command-not-found fasd)
 source $ZSH/oh-my-zsh.sh
 
 # ruby gems
-PATH=$PATH:~/.gem/ruby/2.1.0/bin
+PATH=$PATH:~/.gem/ruby/2.2.0/bin
 
 alias c='transmission-remote-cli'
 alias m='mutt'
@@ -44,7 +44,5 @@ if [ "$TERM" != "dumb" ]; then
 	eval $(dircolors -b ~/.dircolors)
 	zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 fi
-
-EDITOR=vim
 
 export P4CONFIG=.p4config
