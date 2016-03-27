@@ -4,6 +4,7 @@ noremap k 8k
 
 set hintchars=hjklasdfgyuiopqwertnmzxcvb
 set nohlsearch
+set showstatuslinks=3
 
 " Hack to get rid of the dotted line in the statusbar
 hi Normal		background: #E0E0E0;
@@ -16,6 +17,7 @@ nnoremap <C-w> :tabclose<CR>
 nnoremap <C-c> <Ins><C-c><Ins>
 nnoremap <C-v> <Ins><C-v><Ins>
 nnoremap <C-t> <Ins><C-t><Ins>
+nnoremap <C-b> <Ins><C-b><Ins>
 nnoremap <C-S-p> :winopen -private<CR>
 nnoremap gf f
 nnoremap / i<C-f>
@@ -27,6 +29,7 @@ inoremap <C-f> <Esc>i<C-f>
 inoremap <C-w> <Esc>:tabclose<CR>
 inoremap <C-a> <Ins><C-a><Ins>
 inoremap <C-c> <Ins><C-c><Ins>
+inoremap <C-b> <Ins><C-b><Ins>
 inoremap <C-v> <Ins><C-v><Ins>
 inoremap <C-t> <Ins><C-t><Ins>
 inoremap <C-S-p> <Esc><Esc>:winopen -private<CR>
