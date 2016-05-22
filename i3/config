@@ -39,6 +39,7 @@ exec --no-startup-id xmodmap ~/.xmodmap
 exec --no-startup-id pkill pulseaudio; sleep 3 && pulseaudio --start
 exec --no-startup-id pkill transmission-da; sleep 3 && transmission-daemon
 exec --no-startup-id pkill redshift || sleep 3 && redshift -l 44:26 -b 0.9 -t 5500:3700
+exec --no-startup-id pkill pasystray || sleep 3 && pasystray
 
 new_window normal 1
 
