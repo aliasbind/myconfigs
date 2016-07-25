@@ -50,9 +50,13 @@ focus_follows_mouse no
 floating_modifier $mod
 
 # bind volume keys
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 3 +3% 
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 3 -3% 
+bindsym XF86AudioMute exec pactl set-sink-mute 3 toggle
+
+bindsym --whole-window $mod+button4 exec pactl set-sink-volume 3 +3%
+bindsym --whole-window $mod+button5 exec pactl set-sink-volume 3 -3%
+bindsym --whole-window $mod+button2 exec pactl set-sink-mute 3 toggle
 
 # start nautilus
 bindsym $mod+n exec nautilus --no-desktop
